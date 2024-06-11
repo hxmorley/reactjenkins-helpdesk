@@ -1,10 +1,21 @@
+import TicketForm from "../Components/Ticketforn";
+
 const Contact = () => {
 
     return(
-        <div>
-            <h1>This is the about page</h1>
+        <>
+        <div className="reg-buyer">
+
+        <p className="formtitle">New Buyer Registration</p>
+        <br />
+        <TicketForm />       
         </div>
-    )
+
+        <div>
+        
+        </div>
+        </>
+    );
 
 }
 
