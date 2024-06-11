@@ -11,7 +11,6 @@ pipeline{
         stage('Delete'){
             steps{
                 bat '''
-                cd jenkins-helpdesk
                 pm2 delete all
                 '''
             }
@@ -19,7 +18,6 @@ pipeline{
         stage('Run') {
             steps {
                 bat '''
-                cd jenkins-helpdesk
                 pm2 start "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" -- start
                 '''
             }
